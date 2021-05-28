@@ -8,7 +8,7 @@ public class Main {
             array[i] = i + 1;
             System.out.println("number" +
                     "" + array[i]);
-            System.out.println("ИИИИИ....");
+            System.out.println("CH....");
         }
     }
 
