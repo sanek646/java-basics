@@ -12,16 +12,16 @@ public class Main {
         String strInput = input.readLine();
         int size = Integer.parseInt(strInput);
 
-        System.out.println("array length" + size);
+        System.out.println("array length:" + size);
         int[] array = new int[size];
         for (int i = 0; i < size; i++) {
-            System.out.println("Enter" + (i + 1) + "array element");
+            System.out.println("Enter:" + (i + 1) + "array element:");
             String strArr = input.readLine();
             array[i] = Integer.parseInt(strArr);
         }
-        System.out.println("Output of the entire array by elements");
+        System.out.println("Output of the entire array by elements:");
         for (int i = 0; i < size; i++) {
-            System.out.println((i + 1) + "array element" + array[i]);
+            System.out.println((i + 1) + "array element:" + array[i]);
         }
     }
 }
