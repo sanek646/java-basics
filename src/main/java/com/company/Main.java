@@ -1,13 +1,16 @@
 package com.company;
 
+
+import java.util.*;
 public class Main {
-
-    public static void main(String[] args) {
-        int[] num = {1,2,3,4,4,4,6,6,5,8,3,2};
-        for (int i : num ) {
-            System.out.println("number :" + num[i]);
-        }
-
+    public static void main(String arg[]) {
+        ArrayList<Integer> al =  new ArrayList<Integer>();
+        al.add(2);
+        al.add(6);
+        al.add(3);
+        al.add(1);
+        System.out.println("ALL :" + al);
     }
 }
+
 
