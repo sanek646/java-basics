@@ -4,13 +4,15 @@ package com.company;
 import java.util.*;
 public class Main {
     public static void main(String arg[]) {
-        ArrayList<Integer> al =  new ArrayList<Integer>();
-        al.add(2);
-        al.add(6);
-        al.add(3);
-        al.add(1);
-        System.out.println("ALL :" + al);
+        Scanner console= new Scanner(System.in);
+        String w1= console.nextLine();
+        String w2= console.nextLine();
+        String w3= console.nextLine();
+        String w4= console.nextLine();
+        String w5= console.nextLine();
+        System.out.println("words :" +w1+","+w2+","+w3+","+w4+","+w5 );
     }
 }
+
 
 
