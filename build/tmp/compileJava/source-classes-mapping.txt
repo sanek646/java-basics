@@ -1,2 +1,0 @@
-com/company/Main.java
- com.company.Main
