@@ -1,7 +1,7 @@
 package com.company;
 
 
-import java.util.*;
+import java.util.Scanner;
 public class Main {
     public static void main(String arg[]) {
         Scanner console= new Scanner(System.in);
