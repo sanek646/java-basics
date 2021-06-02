@@ -17,7 +17,7 @@ public class prob {
         list.add("Don");
         list.add("Elon");
         list.add("Fred");
-        list.add("Greg");
+        list.add("Greg;");
        // String str = reader.readLine()
 
         //System.out.println(list);
