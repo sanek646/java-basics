@@ -20,8 +20,6 @@ public class Main2 {
             list.add(s);
         }
         System.out.println("list" + list);
-
-
     }
 }
 
