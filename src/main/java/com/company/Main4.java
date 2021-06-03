@@ -1,43 +1,36 @@
 package com.company;
 
 
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
 
 public class Main4 {
-
-    public static class    HashMapCaseInsensitive extends HashMap<String, String>{
-
-        @Override
-        public String put(String key, String value){
-            return super.put(key.toLowerCase(), value);
-        }
-
-        @Override
-        public String get(Object key){
-            return super.get(key.toString().toLowerCase());
-        }
-    }
     public static void main(String[] args) throws IOException {
+
+
         BufferedReader reader = new BufferedReader
                 (new InputStreamReader(System.in));
 
-        HashMap<String, String> list = new HashMapCaseInsensitive();
-        list.put("Alex", "10");
-        list.put("Bob", "12");
-        list.put("Carry", "15");
-        list.put("Don", "25");
-        list.put("Elon", "34");
-        list.put("Fred", "28");
-        list.put("Greg", "21");
-
-        System.out.println("Введите имя");
+        HashSet<String> list = new HashSet<String>();
+        list.add("Alex");
+        list.add("Bob");
+        list.add("Carry");
+        list.add("Don");
+        list.add("Elon");
+        list.add("Fred");
+        list.add("Greg;");
+        System.out.println("Enter a name");
         String name = reader.readLine();
 
-        if (list.containsKey(name.toLowerCase()))
-            System.out.println("Exist");
-        else System.out.println("NOT EXIST 1");
-    }
+
+
+        System.out.println( list.contains(name));
+      /*  Iterator<String> i = list.iterator();
+        while (i.hasNext())
+            System.out.println(i.next());
+    */}
 }
