@@ -27,7 +27,7 @@ public class Main4 {
         String name = reader.readLine().toLowerCase();
         if (list.contains(name))
             System.out.println("Exist!");
-        else System.out.println("Not Exist!");
+        else System.out.println("Not Exist!!!");
     }
 
 }
