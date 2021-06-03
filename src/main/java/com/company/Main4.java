@@ -1,37 +1,43 @@
 package com.company;
 
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Hashtable;
-import java.util.Map;
+import java.util.HashMap;
 
 public class Main4 {
+
+    public static class    HashMapCaseInsensitive extends HashMap<String, String>{
+
+        @Override
+        public String put(String key, String value){
+            return super.put(key.toLowerCase(), value);
+        }
+
+        @Override
+        public String get(Object key){
+            return super.get(key.toString().toLowerCase());
+        }
+    }
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader
                 (new InputStreamReader(System.in));
-        Hashtable<String, String> map = new Hashtable<>();
-        map.put("A", "Oleg");
-        map.put("B", "Sasha");
-        map.put("C", "Andrey");
-        map.put("D", "Kolya");
-        map.put("E", "Vasya");
-        map.put("F", "Petya");
-        map.put("G", "Andrey");
-        map.put("H", "Oleg");
-        map.put("I", "Sasha");
-        map.put("J", "Andrey");
-        System.out.println("Insert name");
-        String str2 = reader.readLine();
-        String hashstr ;
-        boolean exist=false;
-        for (Map.Entry<String, String> entry : map.entrySet()){
-            hashstr = entry.getValue();
-            if(str2.equalsIgnoreCase(hashstr))
-                exist = true;
-        }
-        if (exist) System.out.println("Exist");
-        else System.out.println("NOT Exist");
 
+        HashMap<String, String> list = new HashMapCaseInsensitive();
+        list.put("Alex", "10");
+        list.put("Bob", "12");
+        list.put("Carry", "15");
+        list.put("Don", "25");
+        list.put("Elon", "34");
+        list.put("Fred", "28");
+        list.put("Greg", "21");
+
+        System.out.println("Введите имя");
+        String name = reader.readLine();
+
+        if (list.containsKey(name.toLowerCase()))
+            System.out.println("Exist");
+        else System.out.println("NOT EXIST");
     }
 }
