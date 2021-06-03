@@ -38,6 +38,6 @@ public class Main4 {
 
         if (list.containsKey(name.toLowerCase()))
             System.out.println("Exist");
-        else System.out.println("NOT EXIST");
+        else System.out.println("NOT EXIST 1");
     }
 }
