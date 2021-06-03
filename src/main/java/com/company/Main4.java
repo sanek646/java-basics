@@ -16,21 +16,18 @@ public class Main4 {
                 (new InputStreamReader(System.in));
 
         HashSet<String> list = new HashSet<String>();
-        list.add("Alex");
-        list.add("Bob");
-        list.add("Carry");
-        list.add("Don");
-        list.add("Elon");
-        list.add("Fred");
-        list.add("Greg;");
+        list.add("alex");
+        list.add("bob");
+        list.add("carry");
+        list.add("don");
+        list.add("elon");
+        list.add("fred");
+        list.add("greg;");
         System.out.println("Enter a name");
-        String name = reader.readLine();
+        String name = reader.readLine().toLowerCase();
+        if (list.contains(name))
+            System.out.println("Exist!");
+        else System.out.println("Not Exist!");
+    }
 
-
-
-        System.out.println( list.contains(name));
-      /*  Iterator<String> i = list.iterator();
-        while (i.hasNext())
-            System.out.println(i.next());
-    */}
 }
