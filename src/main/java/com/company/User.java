@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class User {
     public class PersonJAVABean implements java.io.Serializable{
+       // private static final long serialVersionUID= 1l;
         private int id;
         private int companyId;
         private String fistName;
