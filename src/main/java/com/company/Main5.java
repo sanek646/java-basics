@@ -21,6 +21,7 @@ public class Main5 {
         Iterator iterator = users.iterator();
 
         while (iterator.hasNext()) {
+            //System.out.println(itr.next());
             User user = (User)iterator.next();
             System.out.println("id - " + user.getId() + " : name - "
                     + user.getFistName() + " : last name - "
