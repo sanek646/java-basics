@@ -2,14 +2,14 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.ListIterator;
+
 
 public class Main5 {
 
 
     public static void main(String[] args) {
 
-        ArrayList users = new ArrayList();
+        ArrayList<User>  users = new ArrayList<>();
 
         users.add(new User(1695, "alex", "a", 347913, "reg"));
         users.add(new User(3273, "oleg", "b", 347913, "reg"));
@@ -17,12 +17,13 @@ public class Main5 {
         users.add(new User(3257, "den", "d", 347913, "ing"));
         users.add(new User(3266, "alex", "g", 347913, "sbor"));
 
-        //ListIterator itr = users.listIterator();
-        Iterator iterator = users.iterator();
+
+       /* Iterator iterator = users.iterator();
 
         while (iterator.hasNext()) {
-            //System.out.println(itr.next());
-            User user = (User)iterator.next();
+            User user = (User)iterator.next();*/
+        for(User user  : users) {
+            // User user = (User) users.get(i);
             System.out.println("id - " + user.getId() + " : name - "
                     + user.getFistName() + " : last name - "
                     + user.getLastName() + " : company ID - " +
