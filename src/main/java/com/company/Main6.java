@@ -36,7 +36,8 @@ public class Main6 {
                 System.out.println("id " + res.getInt("id")
                         + " name " + res.getString("first_name")
                         + " last name " + res.getString("last_name")
-                        + " company ID " + res.getInt("company_id"));
+                        + " company ID " + res.getInt("company_id")
+                        +" role " + res.getString("role_work"));
             }
         } catch(SQLException e) {
             e.printStackTrace();
