@@ -17,7 +17,7 @@ public class Main6 {
         users.add(new User(3244, "bob", "c", 347913, "ing"));
         users.add(new User(3257, "den", "d", 347913, "ing"));
         users.add(new User(3266, "alex", "g", 347913, "sbor"));
-        String bd = "SELECT Idwork, fistName, lastName, companyId, rolework FROM worker";
+        String bd = "SELECT id, first_name, last_name, company_id, role_work FROM worker";
 
         try (Connection con = DriverManager.getConnection("jdbc:postgresql://127.0.0.1:5432/new","sanek","sanek");
              Statement st = con.createStatement()) {
@@ -33,10 +33,10 @@ public class Main6 {
             ResultSet res = st.executeQuery(bd);
 
             while (res.next()) {
-                System.out.println("id " + res.getInt("Idwork")
-                        + " name " + res.getString("fistName")
-                        + " last name " + res.getString("lastName")
-                        + " company ID " + res.getInt("companyId"));
+                System.out.println("id " + res.getInt("id")
+                        + " name " + res.getString("first_name")
+                        + " last name " + res.getString("last_name")
+                        + " company ID " + res.getInt("company_id"));
             }
         } catch(SQLException e) {
             e.printStackTrace();
